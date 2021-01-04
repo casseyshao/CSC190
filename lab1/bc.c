@@ -120,6 +120,12 @@ int main(void) {
       i = i+1;
    }
       
-   printf("PASS\n");
-   return 0;
+   /* ensure there are no more brackets in the stack */
+   if (pop(&input_list,&popped_value) == -1){
+      printf("PASS\n");
+      return 0;
+   } else {
+      printf("FAIL,%d\n",i);
+      return -1;
+   }
 }
