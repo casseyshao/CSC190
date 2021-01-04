@@ -24,6 +24,7 @@ class stack:
    #   return self.lifo
 
 '''
+testing:
 stackTest = stack()
 stackTest.push(2)
 stackTest.push(3)
