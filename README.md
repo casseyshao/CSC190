@@ -13,3 +13,5 @@
 **Lab 6:** Applications of Bit Manipulation: a programming prototype for a linear feedback shift register (LFSR), and a programming prototype for a simple encryption/decryption algorithm.
 
 **Lab 7:** Implementing sorting algorithms: selection sort, heap sort, and merge sort (Python).
+
+**Lab 8:** Bubble sort using a function pointer, priority queue (heap) implementation, and heap sort (C). Radix sort (Python).
