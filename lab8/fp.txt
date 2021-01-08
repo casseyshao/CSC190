@@ -1,0 +1,188 @@
+
+./a.out:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000e20:	55 	pushq	%rbp
+100000e21:	48 89 e5 	movq	%rsp, %rbp
+100000e24:	89 7d fc 	movl	%edi, -4(%rbp)
+100000e27:	8b 7d fc 	movl	-4(%rbp), %edi
+100000e2a:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000e2e:	89 f8 	movl	%edi, %eax
+100000e30:	5d 	popq	%rbp
+100000e31:	c3 	retq
+100000e32:	66 66 66 66 66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+100000e40:	55 	pushq	%rbp
+100000e41:	48 89 e5 	movq	%rsp, %rbp
+100000e44:	89 7d fc 	movl	%edi, -4(%rbp)
+100000e47:	8b 7d fc 	movl	-4(%rbp), %edi
+100000e4a:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000e4e:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000e52:	89 f8 	movl	%edi, %eax
+100000e54:	5d 	popq	%rbp
+100000e55:	c3 	retq
+100000e56:	66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+100000e60:	55 	pushq	%rbp
+100000e61:	48 89 e5 	movq	%rsp, %rbp
+100000e64:	48 83 ec 20 	subq	$32, %rsp
+100000e68:	48 89 7d f8 	movq	%rdi, -8(%rbp)
+100000e6c:	89 75 f4 	movl	%esi, -12(%rbp)
+100000e6f:	48 8b 7d f8 	movq	-8(%rbp), %rdi
+100000e73:	8b 75 f4 	movl	-12(%rbp), %esi
+100000e76:	48 89 7d e8 	movq	%rdi, -24(%rbp)
+100000e7a:	89 f7 	movl	%esi, %edi
+100000e7c:	48 8b 45 e8 	movq	-24(%rbp), %rax
+100000e80:	ff d0 	callq	*%rax
+100000e82:	48 83 c4 20 	addq	$32, %rsp
+100000e86:	5d 	popq	%rbp
+100000e87:	c3 	retq
+100000e88:	0f 1f 84 00 00 00 00 00 	nopl	(%rax,%rax)
+100000e90:	55 	pushq	%rbp
+100000e91:	48 89 e5 	movq	%rsp, %rbp
+100000e94:	48 83 ec 30 	subq	$48, %rsp
+100000e98:	48 8d 3d d3 00 00 00 	leaq	211(%rip), %rdi
+100000e9f:	48 8d 35 7a ff ff ff 	leaq	-134(%rip), %rsi
+100000ea6:	48 8d 05 93 ff ff ff 	leaq	-109(%rip), %rax
+100000ead:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000eb4:	c7 45 f8 00 00 00 00 	movl	$0, -8(%rbp)
+100000ebb:	48 89 45 f0 	movq	%rax, -16(%rbp)
+100000ebf:	b0 00 	movb	$0, %al
+100000ec1:	e8 8a 00 00 00 	callq	138
+100000ec6:	48 8d 3d bd 00 00 00 	leaq	189(%rip), %rdi
+100000ecd:	48 8d 35 6c ff ff ff 	leaq	-148(%rip), %rsi
+100000ed4:	89 45 ec 	movl	%eax, -20(%rbp)
+100000ed7:	b0 00 	movb	$0, %al
+100000ed9:	e8 72 00 00 00 	callq	114
+100000ede:	c7 45 f8 00 00 00 00 	movl	$0, -8(%rbp)
+100000ee5:	89 45 e8 	movl	%eax, -24(%rbp)
+100000ee8:	83 7d f8 0a 	cmpl	$10, -8(%rbp)
+100000eec:	0f 8d 54 00 00 00 	jge	84 <_main+0xB6>
+100000ef2:	48 8d 3d 27 ff ff ff 	leaq	-217(%rip), %rdi
+100000ef9:	8b 75 f8 	movl	-8(%rbp), %esi
+100000efc:	8b 45 f8 	movl	-8(%rbp), %eax
+100000eff:	89 75 e4 	movl	%esi, -28(%rbp)
+100000f02:	89 c6 	movl	%eax, %esi
+100000f04:	e8 57 ff ff ff 	callq	-169 <_driver>
+100000f09:	48 8b 7d f0 	movq	-16(%rbp), %rdi
+100000f0d:	8b 75 f8 	movl	-8(%rbp), %esi
+100000f10:	48 89 7d d8 	movq	%rdi, -40(%rbp)
+100000f14:	89 f7 	movl	%esi, %edi
+100000f16:	48 8b 4d d8 	movq	-40(%rbp), %rcx
+100000f1a:	89 45 d4 	movl	%eax, -44(%rbp)
+100000f1d:	ff d1 	callq	*%rcx
+100000f1f:	48 8d 3d 7c 00 00 00 	leaq	124(%rip), %rdi
+100000f26:	8b 75 e4 	movl	-28(%rbp), %esi
+100000f29:	8b 55 d4 	movl	-44(%rbp), %edx
+100000f2c:	89 c1 	movl	%eax, %ecx
+100000f2e:	b0 00 	movb	$0, %al
+100000f30:	e8 1b 00 00 00 	callq	27
+100000f35:	89 45 d0 	movl	%eax, -48(%rbp)
+100000f38:	8b 45 f8 	movl	-8(%rbp), %eax
+100000f3b:	83 c0 01 	addl	$1, %eax
+100000f3e:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f41:	e9 a2 ff ff ff 	jmp	-94 <_main+0x58>
+100000f46:	8b 45 fc 	movl	-4(%rbp), %eax
+100000f49:	48 83 c4 30 	addq	$48, %rsp
+100000f4d:	5d 	popq	%rbp
+100000f4e:	c3 	retq
+
+_sq:
+100000e20:	55 	pushq	%rbp
+100000e21:	48 89 e5 	movq	%rsp, %rbp
+100000e24:	89 7d fc 	movl	%edi, -4(%rbp)
+100000e27:	8b 7d fc 	movl	-4(%rbp), %edi
+100000e2a:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000e2e:	89 f8 	movl	%edi, %eax
+100000e30:	5d 	popq	%rbp
+100000e31:	c3 	retq
+100000e32:	66 66 66 66 66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+
+_cu:
+100000e40:	55 	pushq	%rbp
+100000e41:	48 89 e5 	movq	%rsp, %rbp
+100000e44:	89 7d fc 	movl	%edi, -4(%rbp)
+100000e47:	8b 7d fc 	movl	-4(%rbp), %edi
+100000e4a:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000e4e:	0f af 7d fc 	imull	-4(%rbp), %edi
+100000e52:	89 f8 	movl	%edi, %eax
+100000e54:	5d 	popq	%rbp
+100000e55:	c3 	retq
+100000e56:	66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+
+_driver:
+100000e60:	55 	pushq	%rbp
+100000e61:	48 89 e5 	movq	%rsp, %rbp
+100000e64:	48 83 ec 20 	subq	$32, %rsp
+100000e68:	48 89 7d f8 	movq	%rdi, -8(%rbp)
+100000e6c:	89 75 f4 	movl	%esi, -12(%rbp)
+100000e6f:	48 8b 7d f8 	movq	-8(%rbp), %rdi
+100000e73:	8b 75 f4 	movl	-12(%rbp), %esi
+100000e76:	48 89 7d e8 	movq	%rdi, -24(%rbp)
+100000e7a:	89 f7 	movl	%esi, %edi
+100000e7c:	48 8b 45 e8 	movq	-24(%rbp), %rax
+100000e80:	ff d0 	callq	*%rax
+100000e82:	48 83 c4 20 	addq	$32, %rsp
+100000e86:	5d 	popq	%rbp
+100000e87:	c3 	retq
+100000e88:	0f 1f 84 00 00 00 00 00 	nopl	(%rax,%rax)
+
+_main:
+100000e90:	55 	pushq	%rbp
+100000e91:	48 89 e5 	movq	%rsp, %rbp
+100000e94:	48 83 ec 30 	subq	$48, %rsp
+100000e98:	48 8d 3d d3 00 00 00 	leaq	211(%rip), %rdi
+100000e9f:	48 8d 35 7a ff ff ff 	leaq	-134(%rip), %rsi
+100000ea6:	48 8d 05 93 ff ff ff 	leaq	-109(%rip), %rax
+100000ead:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000eb4:	c7 45 f8 00 00 00 00 	movl	$0, -8(%rbp)
+100000ebb:	48 89 45 f0 	movq	%rax, -16(%rbp)
+100000ebf:	b0 00 	movb	$0, %al
+100000ec1:	e8 8a 00 00 00 	callq	138
+100000ec6:	48 8d 3d bd 00 00 00 	leaq	189(%rip), %rdi
+100000ecd:	48 8d 35 6c ff ff ff 	leaq	-148(%rip), %rsi
+100000ed4:	89 45 ec 	movl	%eax, -20(%rbp)
+100000ed7:	b0 00 	movb	$0, %al
+100000ed9:	e8 72 00 00 00 	callq	114
+100000ede:	c7 45 f8 00 00 00 00 	movl	$0, -8(%rbp)
+100000ee5:	89 45 e8 	movl	%eax, -24(%rbp)
+100000ee8:	83 7d f8 0a 	cmpl	$10, -8(%rbp)
+100000eec:	0f 8d 54 00 00 00 	jge	84 <_main+0xB6>
+100000ef2:	48 8d 3d 27 ff ff ff 	leaq	-217(%rip), %rdi
+100000ef9:	8b 75 f8 	movl	-8(%rbp), %esi
+100000efc:	8b 45 f8 	movl	-8(%rbp), %eax
+100000eff:	89 75 e4 	movl	%esi, -28(%rbp)
+100000f02:	89 c6 	movl	%eax, %esi
+100000f04:	e8 57 ff ff ff 	callq	-169 <_driver>
+100000f09:	48 8b 7d f0 	movq	-16(%rbp), %rdi
+100000f0d:	8b 75 f8 	movl	-8(%rbp), %esi
+100000f10:	48 89 7d d8 	movq	%rdi, -40(%rbp)
+100000f14:	89 f7 	movl	%esi, %edi
+100000f16:	48 8b 4d d8 	movq	-40(%rbp), %rcx
+100000f1a:	89 45 d4 	movl	%eax, -44(%rbp)
+100000f1d:	ff d1 	callq	*%rcx
+100000f1f:	48 8d 3d 7c 00 00 00 	leaq	124(%rip), %rdi
+100000f26:	8b 75 e4 	movl	-28(%rbp), %esi
+100000f29:	8b 55 d4 	movl	-44(%rbp), %edx
+100000f2c:	89 c1 	movl	%eax, %ecx
+100000f2e:	b0 00 	movb	$0, %al
+100000f30:	e8 1b 00 00 00 	callq	27
+100000f35:	89 45 d0 	movl	%eax, -48(%rbp)
+100000f38:	8b 45 f8 	movl	-8(%rbp), %eax
+100000f3b:	83 c0 01 	addl	$1, %eax
+100000f3e:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f41:	e9 a2 ff ff ff 	jmp	-94 <_main+0x58>
+100000f46:	8b 45 fc 	movl	-4(%rbp), %eax
+100000f49:	48 83 c4 30 	addq	$48, %rsp
+100000f4d:	5d 	popq	%rbp
+100000f4e:	c3 	retq
+Disassembly of section __TEXT,__stubs:
+__stubs:
+100000f50:	ff 25 ba 00 00 00 	jmpq	*186(%rip)
+Disassembly of section __TEXT,__stub_helper:
+__stub_helper:
+100000f58:	4c 8d 1d a9 00 00 00 	leaq	169(%rip), %r11
+100000f5f:	41 53 	pushq	%r11
+100000f61:	ff 25 99 00 00 00 	jmpq	*153(%rip)
+100000f67:	90 	nop
+100000f68:	68 00 00 00 00 	pushq	$0
+100000f6d:	e9 e6 ff ff ff 	jmp	-26 <__stub_helper>
