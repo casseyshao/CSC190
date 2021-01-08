@@ -15,3 +15,5 @@
 **Lab 7:** Implementing sorting algorithms: selection sort, heap sort, and merge sort (Python).
 
 **Lab 8:** Bubble sort using a function pointer, priority queue (heap) implementation, and heap sort (C). Radix sort (Python).
+
+**Lab 9:** Quicksort (and the required partition function), and Tower of Hanoi algorithm (Python).
