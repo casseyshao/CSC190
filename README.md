@@ -11,3 +11,5 @@
 **Lab 5:** Graph class that includes a function to add vertices to the graph, add directed/undirected and weighted edges to the graph, do a breadth/depth traversal of the graph, check for connectivity between two vertices, and find the path between two connected vertices (Python).
 
 **Lab 6:** Applications of Bit Manipulation: a programming prototype for a linear feedback shift register (LFSR), and a programming prototype for a simple encryption/decryption algorithm.
+
+**Lab 7:** Implementing sorting algorithms: selection sort, heap sort, and merge sort (Python).
